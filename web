@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "using online store app modules"
-
-npm start
