@@ -1,0 +1,37 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "e-commerce platform",
+  "main": "app.js",
+  "private": true,
+  "engines": {
+    "node": "5.4.x"
+  },
+  "scripts": {
+    "start": "node_modules/forever/bin/forever bin/www.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "e-commerce",
+    "online",
+    "store",
+    "api"
+  ],
+  "author": "Satish",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.14.2",
+    "email-validator": "^1.0.3",
+    "express": "^4.13.3",
+    "forever": "^0.15.1",
+    "jwt-simple": "^0.4.1",
+    "log4js": "^0.6.29",
+    "moment": "^2.11.1",
+    "mongoose": "^4.3.6"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.1.1"
+  }
+}
