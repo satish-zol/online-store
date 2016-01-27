@@ -26,11 +26,8 @@ var connect = function() {
 			}
 		}
 	};
-	if(process.env == 'production') {
-		mongodb:heroku_x44kszk0:heroku_x44kszk0@ds051645.mongolab.com:51645/heroku_x44kszk0
-	}else {
-		mongoose.connect("mongodb://localhost/online-store", options);
-	}
+	var uri = process.env.MONGOLAB_URI || "mongodb://localhost/online-store";
+	mongoose.connect(uri, options);
 }
 
 connect();
